@@ -20,11 +20,11 @@ describe "Static pages" do
       visit '/static_pages/help'
       page.should have_selector('h1', :text => 'Help')
     end
-  end
     
     it "should have the h1 'Help'" do
       visit '/static_pages/help'
       page.should have_selector('title', :text => "Ruby on Rails Tutorial Sample App | Help")
+    end
   end
   
   describe "About page" do
@@ -38,5 +38,6 @@ describe "Static pages" do
         visit '/static_pages/about'
         page.should have_selector('title', :text => "Ruby on Rails Tutorial Sample App | About Us")
       end
-    end
+  end
+
 end
