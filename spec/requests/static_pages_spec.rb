@@ -20,7 +20,7 @@ describe "Static pages" do
         page.should_not have_selector('title', :text => '| Home')
       end
     end
-  
+   
   
   describe "Help page" do
     it "should have the h1 'Help'" do
